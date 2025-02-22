@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodApplication</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cards.css">
+    <style>
+        .read-more-btn {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     
+        .read-more-btn:hover {
+            background-color: darkgreen;
+        }
+    </style>
 </head>
 <body>
     <div id="Intro">
@@ -13,10 +27,10 @@
             <div id="logo">FoodApplication</div>
             <ul class="nav-links">
                 <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Recipes</a></li>
-                <li><a href="">Categories</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Recipies-section">Recipes</a></li>
+                <li><a href="#Categories">Categories</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
             <button id="log-reg">Login</button>
 
@@ -44,7 +58,7 @@
     <div id="about">
 
         <center>
-            <h1 class="whText" style="font-size: 65px;padding-top: 15vh;padding-bottom: 5vh;">About us</h1>
+            <h1 class="whText" style="font-size: 65px;padding-top: 10vh;padding-bottom: 5vh;">About us</h1>
         </center>
 
         <div class="container">
@@ -65,8 +79,185 @@
 
     </div>
 
-    <div id="contactUs">
-        
+    <div id="Recipies-section">
+        <center>
+            <h1 class="whText" style="font-size: 65px;padding-top: 12vh;padding-bottom: 5vh;">Recipies</h1>
+        </center>
+        <div id="Recipes" class="cards-section">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./paneer-naan.jpg" alt="Spicy Paneer Curry with Butter naan">
+                </div>
+                <div class="content">
+                    <h1>Spicy Paneer Curry & Butter naan</h1>
+                    <p>A rich and creamy paneer dish with butter naan.</p>
+                    <button id="log-reg">Start Cooking</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="./pastry.jpg" alt="Waffles with Chocolate">
+                </div>
+                <div class="content">
+                    <h1>Pastry</h1>
+                    <p>A sweet delight with a flaky crust.</p>
+                    <button id="log-reg">Start Cooking</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="./waf2.jpg" alt="Vanilla Waffles">
+                </div>
+                <div class="content">
+                    <h1>Vanilla Waffles</h1>
+                    <p>Soft, fluffy waffles with vanilla flavor.</p>
+                    <button id="log-reg">Start Cooking</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="./ch-bir.jpg" alt="Chicken Biryani">
+                </div>
+                <div class="content">
+                    <h1>Chicken Biryani</h1>
+                    <p>Aromatic biryani with flavorful spices.</p>
+                    <button id="log-reg">Start Cooking</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="Momo.jpg" alt="Momo">
+                </div>
+                <div class="content">
+                    <h1>Momos</h1>
+                    <p>Steamed dumplings filled with tasty stuffing.</p>
+                    <button id="log-reg">Start Cooking</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="./Bread-art.jpg" alt="bread">
+                </div>
+                <div class="content">
+                    <h1>Doggo Bread 🐶</h1>
+                    <p>Cute bread with a playful touch.</p>
+                    <button id="log-reg">Start Cooking</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="./Lollipops.jpg" alt="Chicken Lollipops">
+                </div>
+                <div class="content">
+                    <h1>Chicken Lollipops</h1>
+                    <p>Juicy, spicy chicken bites to enjoy.</p>
+                    <button id="log-reg">Start Cooking</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="./Idly.jpg" alt="Idly">
+                </div>
+                <div class="content">
+                    <h1>Idly</h1>
+                    <p>A fluffy, soft treat for breakfast.</p>
+                    <button id="log-reg">Start Cooking</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="./fr-rice.jpg" alt="Chicken Fried Rice">
+                </div>
+                <div class="content">
+                    <h1>Chicken Fried Rice</h1>
+                    <p>Tasty rice with chicken chunks.</p>
+                    <button id="log-reg">Start Cooking</button>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-image">
+                    <img src="./pancake.jpg" alt="Pan Cakes">
+                </div>
+                <div class="content">
+                    <h1>Pan Cakes</h1>
+                    <p>A fluffy, sweet treat for breakfast.</p>
+                    <button id="log-reg">Start Cooking</button>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <!-- Categories -->
+    
+    <div id="categorey-section">
+        <center>
+            <h1 class="whText" style="font-size: 65px;padding-top: 12vh;padding-bottom: 5vh;" id="Categories">Categories</h1>
+        </center>
+        
+        <div id="Categ" class="cards-section">
+
+            <div class="card2">
+                <div class="card-img-categ">
+                    <img src="./veg.jpg" alt="Spicy Paneer Curry with Butter naan">
+                </div>
+                <div class="categ-content">
+                    <h1>Vegetarian</h1>
+                    <button id="log-reg">Load More</button>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="card-img-categ">
+                    <img src="./Ch-biriyani.jpg" alt="Chicken Biryani">
+                </div>
+                <div class="categ-content">
+                    <h1>Non-Vegetarian</h1>
+                    <button id="log-reg">Load More</button>
+                </div>
+            </div>
+        
+            <div class="card2">
+                <div class="card-img-categ">
+                    <img src="./start-prw.jpg" alt="Vanilla Waffles">
+                </div>
+                <div class="categ-content">
+                    <h1>Starters</h1>
+                    <button id="log-reg">Load More</button>
+                </div>
+            </div>
+        
+            <div class="card2">
+                <div class="card-img-categ">
+                    <img src="./snacks.jpg" alt="Chicken Fried Rice">
+                </div>
+                <div class="categ-content">
+                    <h1>Snacks</h1>
+                    <button id="log-reg">Load More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact us -->
+     <div id="contact-section">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolor voluptate unde obcaecati doloribus minus possimus accusamus! Quibusdam necessitatibus expedita 
+            qui, eaque magni corrupti iure beatae ut accusantium consequuntur consectetur numquam delectus, vitae fugiat voluptate quidem ullam consequatur impedit veniam!
+        </p>
+        <center style="color: white;">
+            <h1>
+                Continue from here
+            </h1>
+        </center>
+     </div>
+    
 </body>
 </html>
