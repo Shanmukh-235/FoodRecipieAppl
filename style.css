@@ -140,21 +140,13 @@ html {
     transition: transform 0.3s ease;
 }
 .image-container img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .text-container {
     max-width: 400px; /* Limit text width */
     font-size: 18px;
     line-height: 1.5;
 }
-/* .image-container:hover  {
-     /* Show text when hovering over image 
-} 
-*/
-
-/*        categories                 */
-
-
 
 /* ------------------------  login page -------------------------- */
 *{
