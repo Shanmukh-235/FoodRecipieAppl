@@ -6,6 +6,7 @@
     <title>FoodApplication</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         .read-more-btn {
             background-color: green;
@@ -24,7 +25,7 @@
 <body>
     <div id="Intro">
         <nav id="nav">
-            <div id="logo">FoodApplication</div>
+            <div id="logo">Ambica's Kitchen </div>
             <ul class="nav-links">
                 <li><a href="">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -49,11 +50,13 @@
             <button id="sc-button">Start Cooking</button>
             <script>
                 document.getElementById("sc-button").addEventListener("click", function() {
-                    window.location.href = "./login.html"; 
+                    window.location.href = "#Recipies-section"; 
                 });
             </script>
         </div>
     </div>
+
+    <!-- About us -->
 
     <div id="about">
 
@@ -79,9 +82,11 @@
 
     </div>
 
+    <!-- Recipies -->
+
     <div id="Recipies-section">
         <center>
-            <h1 class="whText" style="font-size: 65px;padding-top: 12vh;padding-bottom: 5vh;">Recipies</h1>
+            <h1 class="whText" style="font-size: 65px;padding-top: 12vh;padding-bottom: 5vh;">Featured Recipies</h1>
         </center>
         <div id="Recipes" class="cards-section">
             <div class="card">
@@ -111,8 +116,8 @@
                     <img src="./waf2.jpg" alt="Vanilla Waffles">
                 </div>
                 <div class="content">
-                    <h1>Vanilla Waffles</h1>
-                    <p>Soft, fluffy waffles with vanilla flavor.</p>
+                    <h1>Waffles</h1>
+                    <p>Soft, fluffy waffles with vanilla Ice cream.</p>
                     <button id="log-reg">Start Cooking</button>
                 </div>
             </div>
@@ -178,7 +183,7 @@
                 </div>
                 <div class="content">
                     <h1>Chicken Fried Rice</h1>
-                    <p>Tasty rice with chicken chunks.</p>
+                    <p>Tasty Flavored rice with chicken chunks.</p>
                     <button id="log-reg">Start Cooking</button>
                 </div>
             </div>
@@ -246,18 +251,55 @@
             </div>
         </div>
     </div>
+
     <!-- Contact us -->
-     <div id="contact-section">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolor voluptate unde obcaecati doloribus minus possimus accusamus! Quibusdam necessitatibus expedita 
-            qui, eaque magni corrupti iure beatae ut accusantium consequuntur consectetur numquam delectus, vitae fugiat voluptate quidem ullam consequatur impedit veniam!
-        </p>
-        <center style="color: white;">
-            <h1>
-                Continue from here
-            </h1>
-        </center>
-     </div>
+     
+    <div id="contact-section">
+        <div class="contact-container">
+            
+            <!-- Contact Information -->
+            <div class="our-info">
+                <center class="whText">
+                    <h2>Reach us now!</h2>
+                    <br><br>
+                    <p><strong>Address:</strong> Deva lokam, Opposite to Naraka lokam</p>
+                    <br>
+                    <p><strong>Phone:</strong> +00 00000 000 00</p>
+                    <br>
+                    <p><strong>Email:</strong> devudu@gmail.com</p>
+                    <br>
+                    <p class="social-icons">
+                        <i class="fa-brands fa-linkedin"></i> | 
+                        <i class="fa-brands fa-github"></i> | 
+                        <i class="fa-brands fa-instagram"></i> | 
+                        <i class="fa-brands fa-youtube"></i>
+                    </p>
+                </center>
+            </div>
+            
+            <!-- Form Section -->
+             
+            <div class="text-boxes">
+                <form>
+                    <h2>Want to say something?!</h2>
+                    
+                    <label for="username">Name:</label>
+                    <input type="text"  name="username" required placeholder="Enter your name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+                    
+                    <center>
+                        <button type="submit" id="log-reg">Submit</button>
+                    </center>
+                </form>
+            </div>            
+
+        </div>
+    </div>
     
 </body>
 </html>
