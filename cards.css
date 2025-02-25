@@ -61,7 +61,7 @@
 /*          categories              */
 
 #categorey-section {
-    height: 75vh;
+    height: 105vh;
     background-color: #334D54;
 }
 
@@ -76,7 +76,7 @@
     width: 85%;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
     flex-wrap: wrap;
     margin: auto;
 }

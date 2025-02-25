@@ -1,0 +1,72 @@
+#log-reg {
+    /* background: #76ff03; */
+    background-color: #64dd17; 
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 125px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; 
+}
+
+#log-reg:hover {
+    background: transparent;
+    color: #ff3d00;
+    /* outline: 1px solid #fff; */
+    outline: 2px solid #000;
+    /* transform: scale(1.1);  */
+}
+
+/*                   Start cooking                      */
+
+#sc-button {
+    background: #fff;
+    color: #ff3d00;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 240px; /* Increased width */
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Prevents text from breaking */
+    text-align: center; /* Ensures text stays centered */
+}
+#sc-button:hover {
+    background: transparent;
+    color: #ff3d00;
+    outline: 2px solid #fff;
+    transform: scale(1.1); /*Slight zoom effect */
+}
+#sc-button:active {
+    transform: scale(0.95); /* Slight shrink effect when clicked */
+}
+
+/* #FFC107 */
+
+#sub {
+    background-color: #FFC107 ; 
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 125px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; 
+}
+#sub:hover {
+    background: #FFC107 ;
+    color: #fff;
+    transform: scale(1.1); /*Slight zoom effect */
+}
+#sub:active {
+    transform: scale(0.95); /* Slight shrink effect when clicked */
+}
