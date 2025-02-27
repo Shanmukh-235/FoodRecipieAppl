@@ -1,327 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FoodApplication</title>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="./cards.css">
-        <link rel="stylesheet" href="./buttonProperties.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodApplication</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./cards.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="buttonProperties.css" />
+  </head>
+  <body>
+    <header style="height: 5vh; position: sticky">
+      <nav id="nav">
+        <div id="logo">Ambica's Kitchen</div>
+        <ul class="nav-links">
+          <li><a href="#Intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Recipies-section">Recipes</a></li>
+          <li><a href="#Categories">Categories</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
 
-    <body>
+      <br /><br /><br /><br /><br /><br /><br />
+    </header>
 
-        <!-- NAv links in header section -->
+    <!-- Intro/Home/Main -->
 
-        <header style="height: 5vh; position: sticky;">
-            <nav id="nav">
-                <div id="logo">Ambica's Kitchen </div>
-                <ul class="nav-links">
-                    <li><a href="#Intro">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Recipies-section">Recipes</a></li>
-                    <li><a href="#Categories">Categories</a></li>
-                    <li><a href="#contact-section">Contact</a></li>
-                </ul>  
-            </nav>
+    <div id="Intro">
+      <div id="OpeningText">
+        <p class="icons" style="padding-top: 10px; font-size: 18px">
+          Unleash Your Culinary Passion
+        </p>
+        <h2 class="orText IntrMain" style="padding-top: 2px">
+          Discover <span style="color: #fff; font-style: italic; ">New </span>Sensations
+        </h2>
+        <p
+          class="whText"
+          style=" padding-bottom: 5px; font-size: 32px; font-weight: bold"
+        >
+          Elevate Your <span style="color: #ffc107">Cooking game</span>!
+        </p>
+        <button id="sc-button">Start Cooking</button>
 
-        <br><br><br><br><br><br><br>
-        </header>
+        <script>
+          document
+            .getElementById("sc-button")
+            .addEventListener("click", function () {
+              window.location.href = "#Recipies-section";
+            });
+        </script>
+      </div>
+    </div>
 
-        <!-- Intro/Home/Main -->
+    <!-- About us -->
 
-        <div id="Intro">
-            <div id="OpeningText">
-                <p class="whText" style="padding-top: 10px; font-size: 25px;">Unleash Your Culinary Passion</p>
-                <h1 class="orText IntrMain" style="padding-top: 15px;">Discover New Sensations</h1>
-                <p class="whText" style="padding-top: 5px; font-size: 32px; font-weight: bold;">Elevate Your <span style="color: #FFC107;" >Cooking game</span>!</p>
-                <button id="sc-button">Start Cooking</button>
+    <div id="about">
+      <center>
+        <h1
+          class="whText"
+          style="font-size: 65px; padding-top: 10vh; padding-bottom: 5vh"
+        >
+          About <span style="color: #ffc107">us</span>!
+        </h1>
+      </center>
 
-                <script>
-                    document.getElementById("sc-button").addEventListener("click", function() {
-                        window.location.href = "#Recipies-section"; 
-                    });
-                </script>
+      <div class="container">
+        <div class="image-container">
+          <img src="./waf3.jpg" />
+        </div>
+        <div class="text-container">
+          <p class="whText">
+            Welcome to our recipe website, where culinary inspiration meets
+            delicious creations! Whether you're a seasoned chef or a passionate
+            home cook, we are here to ignite your taste buds and guide you on a
+            delightful culinary journey. Our extensive collection of recipes
+            covers a wide range of cuisines, from comforting classics to
+            innovative fusion dishes. Each recipe is thoughtfully crafted,
+            tested, and presented with step-by-step instructions, ensuring that
+            even the novice cook can create extraordinary meals. We believe that
+            cooking is an art form that brings people together, and our goal is
+            to empower you to explore your culinary creativity and make every
+            meal a masterpiece. So come on in, explore our diverse recipe
+            collection, and let's embark on a delightful gastronomic adventure
+            together!
+          </p>
+        </div>
+      </div>
+    </div>
 
-            </div>
+    <!-- Recipies -->
+
+    <div id="Recipies-section">
+      <center>
+        <h1
+          class="whText"
+          style="font-size: 65px; padding-top: 12vh; padding-bottom: 5vh"
+        >
+          F<span style="color: #ffc107; " >eat</span>u<span style="color: #d50000; ">Red</span> Reci<span style="color: #ffc107;">pies</span>
+        </h1>
+      </center>
+      <div id="Recipes" class="cards-section">
+        <div class="card">
+          <div class="card-image">
+            <img
+              src="./paneer-naan.jpg"
+              alt="Spicy Paneer Curry with Butter naan"
+            />
+          </div>
+          <div class="content">
+            <h1>Spicy Paneer Curry & Butter naan</h1>
+            <p>A rich and creamy paneer dish with butter naan.</p>
+            <button id="log-reg">Start Cooking</button>
+          </div>
         </div>
 
-        <!-- About us -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./pastry.jpg" alt="Waffles with Chocolate" />
+          </div>
+          <div class="content">
+            <h1>Pastry</h1>
+            <p>A sweet delight with a flaky crust.</p>
+            <button id="log-reg">Start Cooking</button>
+          </div>
+        </div>
 
-        <div id="about">
+        <div class="card">
+          <div class="card-image">
+            <img src="./waf2.jpg" alt="Vanilla Waffles" />
+          </div>
+          <div class="content">
+            <h1>Waffles</h1>
+            <p>Soft, fluffy waffles with vanilla Ice cream.</p>
+            <button id="log-reg">Start Cooking</button>
+          </div>
+        </div>
 
+        <div class="card">
+          <div class="card-image">
+            <img src="./ch-bir.jpg" alt="Chicken Biryani" />
+          </div>
+          <div class="content">
+            <h1>Chicken Biryani</h1>
+            <p>Aromatic biryani with flavorful spices.</p>
+            <button id="log-reg">Start Cooking</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="Momo.jpg" alt="Momo" />
+          </div>
+          <div class="content">
+            <h1>Momos</h1>
+            <p>Steamed dumplings filled with tasty stuffing.</p>
+            <button id="log-reg">Start Cooking</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="./Bread-art.jpg" alt="bread" />
+          </div>
+          <div class="content">
+            <h1>Doggo Bread 🐶</h1>
+            <p>Cute bread with a playful touch.</p>
+            <button id="log-reg">Start Cooking</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="./Lollipops.jpg" alt="Chicken Lollipops" />
+          </div>
+          <div class="content">
+            <h1>Chicken Lollipops</h1>
+            <p>Juicy, spicy chicken bites to enjoy.</p>
+            <button id="log-reg">Start Cooking</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="./Idly.jpg" alt="Idly" />
+          </div>
+          <div class="content">
+            <h1>Idly</h1>
+            <p>A fluffy, soft treat for breakfast.</p>
+            <button id="log-reg">Start Cooking</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="./fr-rice.jpg" alt="Chicken Fried Rice" />
+          </div>
+          <div class="content">
+            <h1>Chicken Fried Rice</h1>
+            <p>Tasty Flavored rice with chicken chunks.</p>
+            <button id="log-reg">Start Cooking</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="./pancake.jpg" alt="Pan Cakes" />
+          </div>
+          <div class="content">
+            <h1>Pan Cakes</h1>
+            <p>A fluffy, sweet treat for breakfast.</p>
+            <button id="log-reg">Start Cooking</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories -->
+
+    <div id="categorey-section">
+      <center>
+        <h1
+          class="whText"
+          style="font-size: 65px; padding-top: 12vh; padding-bottom: 5vh"
+          id="Categories"
+        >
+          C<span style="color: #ffc107;">ate</span>gories
+        </h1>
+      </center>
+
+      <div id="Categ" class="cards-section">
+        <div class="card2">
+          <div class="card-img-categ">
+            <img src="./veg.jpg" alt="Spicy Paneer Curry with Butter naan" />
+          </div>
+          <div class="categ-content">
+            <h1>Vegetarian</h1>
+            <button id="log-reg">Load More</button>
+          </div>
+        </div>
+
+        <div class="card2">
+          <div class="card-img-categ">
+            <img src="./Ch-biriyani.jpg" alt="Chicken Biryani" />
+          </div>
+          <div class="categ-content">
+            <h1>Non-Vegetarian</h1>
+            <button id="log-reg">Load More</button>
+          </div>
+        </div>
+
+        <div class="card2">
+          <div class="card-img-categ">
+            <img src="./start-prw.jpg" alt="Vanilla Waffles" />
+          </div>
+          <div class="categ-content">
+            <h1>Starters</h1>
+            <button id="log-reg">Load More</button>
+          </div>
+        </div>
+
+        <div class="card2">
+          <div class="card-img-categ">
+            <img src="./snacks.jpg" alt="Chicken Fried Rice" />
+          </div>
+          <div class="categ-content">
+            <h1>Snacks</h1>
+            <button id="log-reg">Load More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact us -->
+
+    <div id="contact-section">
+      <div class="contact-container">
+        <!-- Contact Information -->
+        <div class="our-info">
+          <center class="whText">
+            <h2>Reach us now!</h2>
+            <br /><br />
+            <p>
+              <strong>Address:</strong> Deva lokam, Opposite to Naraka lokam
+            </p>
+            <br />
+            <p><strong>Phone:</strong> +69 98765 432 10</p>
+            <br />
+            <p><strong>Email:</strong> devudu@gmail.com</p>
+            <br />
+            <p class="social-icons">
+              <a
+                class="icons"
+                href="https://www.linkedin.com/in/shanmukha-poorna-chand-413302274"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              |
+              <a class="icons" href="https://github.com/Shanmukh-235"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              |
+              <a class="icons" href="shanmukhapoornachand14316@gmail.com"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </p>
+          </center>
+        </div>
+
+        <!-- Form Section -->
+
+        <div class="text-boxes">
+          <form>
+            <h2>Want to say something?!</h2>
+
+            <label for="username">Name:</label>
+            <input
+              type="text"
+              name="username"
+              required
+              placeholder="Enter your name"
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Type your message here"
+            ></textarea>
+            <br />
             <center>
-                <h1 class="whText" style="font-size: 65px;padding-top: 10vh;padding-bottom: 5vh;">About us</h1>
+              <button type="submit" id="sub">Submit</button>
             </center>
-
-            <div class="container">
-                <div class="image-container">
-                    <img src="./waf3.jpg">
-                </div>
-                <div class="text-container">
-                    <p class="whText">
-                        Welcome to our recipe website, where culinary
-                        inspiration meets delicious creations! Whether you're a seasoned chef or a passionate home cook, we are here to ignite your taste buds and guide you on a delightful culinary 
-                        journey. Our extensive collection of recipes covers a wide range of cuisines, from comforting classics to innovative fusion dishes. Each recipe is thoughtfully crafted, 
-                        tested, and presented with step-by-step instructions, ensuring that even the novice cook can create extraordinary meals. We believe that cooking is an art form that brings 
-                        people together, and our goal is to empower you to explore your culinary creativity and make every meal a masterpiece. So come on in, explore our diverse recipe collection, 
-                        and let's embark on a delightful gastronomic adventure together!
-                    </p>
-                </div>
-            </div>
-
+          </form>
         </div>
-
-        <!-- Recipies -->
-
-        <div id="Recipies-section">
-
-            <center>
-                <h1 class="whText" style="font-size: 65px;padding-top: 12vh;padding-bottom: 5vh;">Featured Recipies</h1>
-            </center>
-
-            <div id="Recipes" class="cards-section">
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./paneer-naan.jpg" alt="Spicy Paneer Curry with Butter naan">
-                    </div>
-                    <div class="content">
-                        <h1>Spicy Paneer Curry & Butter naan</h1>
-                        <p>A rich and creamy paneer dish with butter naan.</p>
-                        <button id="log-reg">Start Cooking</button>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./pastry.jpg" alt="Waffles with Chocolate">
-                    </div>
-                    <div class="content">
-                        <h1>Pastry</h1>
-                        <p>A sweet delight with a flaky crust.</p>
-                        <button id="log-reg">Start Cooking</button>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./waf2.jpg" alt="Vanilla Waffles">
-                    </div>
-                    <div class="content">
-                        <h1>Waffles</h1>
-                        <p>Soft, fluffy waffles with vanilla Ice cream.</p>
-                        <button id="log-reg">Start Cooking</button>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./ch-bir.jpg" alt="Chicken Biryani">
-                    </div>
-                    <div class="content">
-                        <h1>Chicken Biryani</h1>
-                        <p>Aromatic biryani with flavorful spices.</p>
-                        <button id="log-reg">Start Cooking</button>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="card-image">
-                        <img src="Momo.jpg" alt="Momo">
-                    </div>
-                    <div class="content">
-                        <h1>Momos</h1>
-                        <p>Steamed dumplings filled with tasty stuffing.</p>
-                        <button id="log-reg">Start Cooking</button>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./Bread-art.jpg" alt="bread">
-                    </div>
-                    <div class="content">
-                        <h1>Doggo Bread 🐶</h1>
-                        <p>Cute bread with a playful touch.</p>
-                        <button id="log-reg">Start Cooking</button>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./Lollipops.jpg" alt="Chicken Lollipops">
-                    </div>
-                    <div class="content">
-                        <h1>Chicken Lollipops</h1>
-                        <p>Juicy, spicy chicken bites to enjoy.</p>
-                        <button id="log-reg">Start Cooking</button>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./Idly.jpg" alt="Idly">
-                    </div>
-                    <div class="content">
-                        <h1>Idly</h1>
-                        <p>A fluffy, soft treat for breakfast.</p>
-                        <button id="log-reg">Start Cooking</button>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./fr-rice.jpg" alt="Chicken Fried Rice">
-                    </div>
-                    <div class="content">
-                        <h1>Chicken Fried Rice</h1>
-                        <p>Tasty Flavored rice with chicken chunks.</p>
-                        <button id="log-reg">Start Cooking</button>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./pancake.jpg" alt="Pan Cakes">
-                    </div>
-                    <div class="content">
-                        <h1>Pan Cakes</h1>
-                        <p>A fluffy, sweet treat for breakfast.</p>
-                        <button id="log-reg">Start Cooking</button>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        
-        <!-- Categories -->
-        
-        <div id="categorey-section">
-            <center>
-                <h1 class="whText" style="font-size: 65px;padding-top: 12vh;padding-bottom: 5vh;" id="Categories">Categories</h1>
-            </center>
-            
-            <div id="Categ" class="cards-section">
-
-                <div class="card2">
-                    <div class="card-img-categ">
-                        <img src="./veg.jpg" alt="Spicy Paneer Curry with Butter naan">
-                    </div>
-                    <div class="categ-content">
-                        <h1>Vegetarian</h1>
-                        <button id="log-reg">Load More</button>
-                    </div>
-                </div>
-
-                <div class="card2">
-                    <div class="card-img-categ">
-                        <img src="./Ch-biriyani.jpg" alt="Chicken Biryani">
-                    </div>
-                    <div class="categ-content">
-                        <h1>Non-Vegetarian</h1>
-                        <button id="log-reg">Load More</button>
-                    </div>
-                </div>
-            
-                <div class="card2">
-                    <div class="card-img-categ">
-                        <img src="./start-prw.jpg" alt="Vanilla Waffles">
-                    </div>
-                    <div class="categ-content">
-                        <h1>Starters</h1>
-                        <button id="log-reg">Load More</button>
-                    </div>
-                </div>
-            
-                <div class="card2">
-                    <div class="card-img-categ">
-                        <img src="./brf.jpg" alt="snacks">
-                    </div>
-                    <div class="categ-content">
-                        <h1>Break Fast</h1>
-                        <button id="log-reg">Load More</button>
-                    </div>
-                </div>
-
-                <div class="card2">
-                    <div class="card-img-categ">
-                        <img src="./cake.jpg" alt="beverages">
-                    </div>
-                    <div class="categ-content">
-                        <h1>Cakes</h1>
-                        <button id="log-reg">Load More</button>
-                    </div>
-                </div>
-
-                <div class="card2">
-                    <div class="card-img-categ">
-                        <img src="./snacks.jpg" alt="beverages">
-                    </div>
-                    <div class="categ-content">
-                        <h1>Snacks</h1>
-                        <button id="log-reg">Load More</button>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-        <!-- Contact us -->
-        
-        <div id="contact-section">
-
-            <div class="contact-container">
-                
-                <!-- Contact Information -->
-
-                <div class="our-info">
-                    <center class="whText">
-                        <h2>Reach us now!</h2>
-                        <br><br>
-                        <p><strong>Address:</strong> Deva lokam, Opposite to Naraka lokam</p>
-                        <br>
-                        <p><strong>Phone:</strong> +00 00000 000 00</p>
-                        <br>
-                        <p><strong>Email:</strong> devudu@gmail.com</p>
-                        <br>
-                        <p class="social-icons">
-                            <a class="whText" href="https://www.linkedin.com/in/shanmukha-poorna-chand-413302274"><i class="fa-brands fa-linkedin"></i></a> | 
-                            <a class="whText" href="https://github.com/Shanmukh-235"><i class="fa-brands fa-github"></i></a> | 
-                            <a class="whText" href="shanmukhapoornachand14316@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                        </p>
-                    </center>
-                </div>
-                
-                <!-- Form Section -->
-                
-                <div class="text-boxes">
-                    <form>
-                        <h2>Want to say something?!</h2>
-                        
-                        <label for="username">Name:</label>
-                        <input type="text"  name="username" required placeholder="Enter your name">
-                        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email">
-                        
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
-                        
-                        <br>
-
-                        <center>
-                            <button type="submit" id="sub">Submit</button>
-                        </center>
-                    </form>
-                </div>            
-
-            </div>
-            
-        </div>
-        
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

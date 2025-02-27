@@ -11,10 +11,10 @@
 }
 
 .cards-section {
-    width: 85%;
+    width: 95%;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
     flex-wrap: wrap;
     margin: auto;
 }
@@ -22,23 +22,23 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 310px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    width: 280px; /* 80% of original 350px */
+    height: 250px; /* 80% of original 310px */
+    box-shadow: 0 3.2px 6.4px rgba(0, 0, 0, 0.2); /* 80% of original */
+    border-radius: 6.4px; /* 80% of original 8px */
     overflow: hidden;
     background-color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.04); /* Slightly reduced from 1.05 */
+    box-shadow: 0 6.4px 12.8px rgba(0, 0, 0, 0.3); /* 80% of original */
 }
 
 .card img {
     width: 100%;
-    height: 180px;
+    height: 144px; /* 80% of original 180px */
     object-fit: cover;
 }
 
@@ -48,20 +48,19 @@
 }
 
 .content h1 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+    font-size: 0.96rem; /* 80% of original 1.2rem */
+    margin-bottom: 6.5px; /* 80% of original 8px */
 }
 
 .content p {
-    font-size: 0.9rem;
+    font-size: 0.72rem; /* 80% of original 0.9rem */
     color: #555;
 }
-
 
 /*          categories              */
 
 #categorey-section {
-    height: 105vh;
+    height: 75vh;
     background-color: #334D54;
 }
 
@@ -72,49 +71,39 @@
     align-items: center;
 }
 
-.cards-section {
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin: auto;
-}
-
 .card2 {
     display: flex;
     flex-direction: column;
-    width: 420px;
-    height: 335px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    width: 340px; 
+    height: 275px; 
+    box-shadow: 0 3.2px 6.4px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
     overflow: hidden;
     background-color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card2:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.04); 
+    box-shadow: 0 6.4px 12.8px rgba(0, 0, 0, 0.3); 
 }
 
 .card-img-categ img {
     width: 100%;
-    height: 220px;
+    height: 180px; 
     object-fit: cover;
 }
 
 .categ-content {
-    padding: 10px;
+    padding: 8px; 
     text-align: center;
 }
 
 .categ-content h1 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+    font-size: 0.96rem; 
+    margin-bottom: 6.4px; /
 }
 
-.categ-content p {
-    font-size: 0.9rem;
+.categ-content p {/* 80% of original 0.9rem */
     color: #555;
 }
