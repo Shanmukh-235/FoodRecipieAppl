@@ -14,7 +14,7 @@
     width: 95%;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
     margin: auto;
 }
@@ -23,9 +23,9 @@
     display: flex;
     flex-direction: column;
     width: 280px; /* 80% of original 350px */
-    height: 250px; /* 80% of original 310px */
+    height: 235px; /* 80% of original 310px */
     box-shadow: 0 3.2px 6.4px rgba(0, 0, 0, 0.2); /* 80% of original */
-    border-radius: 6.4px; /* 80% of original 8px */
+    border-radius: 10px; /* 80% of original 8px */
     overflow: hidden;
     background-color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -38,7 +38,7 @@
 
 .card img {
     width: 100%;
-    height: 144px; /* 80% of original 180px */
+    height: 130px; /* 80% of original 180px */
     object-fit: cover;
 }
 
