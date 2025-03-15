@@ -1,3 +1,10 @@
+* {
+    /* overflow: hidden; */
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    font-family: 'poppins';
+}
 #log-reg {
     /* background: #76ff03; */
     background-color: #64dd17;

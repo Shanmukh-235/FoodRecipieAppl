@@ -1,3 +1,10 @@
+* {
+    /* overflow: hidden; */
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    font-family: 'poppins';
+}
 #Recipies-section {
     height: 105vh;
     background-color: #2D383D;
