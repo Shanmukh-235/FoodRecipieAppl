@@ -405,3 +405,54 @@ form textarea {
     color: #ffc107;
     transition: all 0.3s ease-in-out;
 }
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .cards-section, #Categ {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .card, .card2 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card, .card2 {
+        width: 90%;
+    }
+
+    #Recipies-section,
+    #categorey-section {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .card img,
+    .card-img-categ img {
+        height: auto;
+    }
+
+    .content h1,
+    .categ-content h1 {
+        font-size: 1.1rem;
+    }
+
+    .content p,
+    .categ-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card, .card2 {
+        width: 100%;
+    }
+
+    #sc-button, #log-reg, #sub {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
